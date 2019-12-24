@@ -1,0 +1,80 @@
+@import "biografia.css";
+@import "filmografia.css";
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+header {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-blend-mode: overlay;
+}
+
+.header-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2.5rem;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -5;
+    display: flex;
+    justify-content: center;
+}
+
+.video-bg video {
+    min-height: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0 1rem;
+}
+
+.gradiente {
+    position: absolute;
+    top: 90vh;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6));
+    z-index: -1;
+}
+
+#kanji {
+    color: #f4de6b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
