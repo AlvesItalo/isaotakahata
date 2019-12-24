@@ -5,12 +5,12 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    background-color: #000;
 }
 
+/*****Home*****/
 header {
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0,0,0,0.6);
     color: white;
     text-align: center;
     height: 100vh;
@@ -59,7 +59,7 @@ header p {
     left: 0;
     height: 10vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6));
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.75));
     z-index: -1;
 }
 
@@ -77,4 +77,20 @@ nav a {
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
+}
+/*****Fim home*****/
+
+/*****Footer****/
+footer {
+    background-color: #3d3d3d;
+    width: 100vw;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer form input {
+    margin: .5rem;
 }
