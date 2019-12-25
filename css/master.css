@@ -27,6 +27,9 @@ header {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 2.5rem;
+
+    animation-name: reveal;
+    animation-duration: 1.5s;
 }
 
 .video-bg {
@@ -86,6 +89,10 @@ footer {
     width: 100vw;
 }
 
+.footer-container {
+    display: flex;
+}
+
 footer form {
     display: flex;
     flex-direction: column;
@@ -93,4 +100,9 @@ footer form {
 
 footer form input {
     margin: .5rem;
+}
+
+@keyframes reveal {
+    0% {transform: translateY(10rem); opacity: 0;}
+    100% {transform: translateY(0); opacity: 100%;}
 }
