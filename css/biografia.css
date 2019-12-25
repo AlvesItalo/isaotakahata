@@ -1,0 +1,26 @@
+.sobre {
+    padding: 1rem;
+    border-radius: 1rem;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre img{
+    min-height: 30%;
+    max-width: 50%;
+    border-radius: 50% 50%;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 690px) {    
+    .sobre {
+        flex-direction: row;
+    }
+}
