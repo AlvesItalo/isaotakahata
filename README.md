@@ -11,4 +11,4 @@ Um tributo ao diretor Isao Takahata do studio ghibili. Projeto da disciplina de 
 ## Inspirações e conceitos:
 - [Timelines](https://freefrontend.com/css-timelines/)
 - [Ma](http://escoladacidade.org/bau/video/ma-espaco-comunicativo-de-eventuais-relacoes/)
-- [Zen Princípios da arte japonesa](https://www.japaoemfoco.com/7-principios-esteticos-japoneses-que-podem-mudar-a-sua-forma-de-pensar/)
+- [Princípios da estética japonesa](https://www.japaoemfoco.com/7-principios-esteticos-japoneses-que-podem-mudar-a-sua-forma-de-pensar/)
