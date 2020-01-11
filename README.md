@@ -7,3 +7,8 @@ Um tributo ao diretor Isao Takahata do studio ghibili. Projeto da disciplina de 
 
 ## Disponível em:
 [Site](https://alvesitalo.github.io/isaotakahata/)
+
+## Inspirações:
+- [Timelines](https://freefrontend.com/css-timelines/)
+- [Ma](http://escoladacidade.org/bau/video/ma-espaco-comunicativo-de-eventuais-relacoes/)
+- [Zen](https://artout.com.br/arte-japonesa/)
