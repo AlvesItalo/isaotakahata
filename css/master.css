@@ -134,6 +134,12 @@ nav a {
     margin: 1rem;
 }
 
+.clear {
+    content: "";
+    display: block; 
+    clear: both;
+}
+
 .kanji {
     writing-mode: vertical-rl;
     text-orientation: upright;

@@ -7,9 +7,10 @@
 /*Cartao bio*/
 .bio-card {
     color: white;
-    margin-top: 1rem;
+    margin: 1rem auto;
     padding: 1rem;
-    background-color: #2d2d2d;    
+    background-color: #2d2d2d;  
+    max-width: 450px;  
 }
 
 .bio-card picture {
@@ -25,10 +26,21 @@
 .bio-card h2 {
     text-align: center;
 }
+
+@media screen and (min-width: 900px) {
+    .bio-card {
+        margin: 1rem 0 0 1rem;
+        float: right;
+    }
+
+    .bio-content p:nth-child(2){
+        padding-top: 1rem;
+    }
+}
+
 /*Fim cartao bio*/
 
 /* Linha do tempo*/
-/*Linha vertical*/
 .timeline {
     position: relative;
     margin: 0 auto;
@@ -45,6 +57,7 @@
 }
 
 .timeline-container {
+    margin: 1rem 0;
     position: relative;
     background-color: inherit;
     max-width: 75%;
@@ -90,5 +103,29 @@
 
 .left::after, .right::after {
     left: -2.6rem;
+}
+
+@media screen and (min-width: 490px) {
+    .timeline-container:hover {
+        transform: translateX(1.5rem) scale(1.1);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .timeline-container:hover {
+        transform: translateX(2rem) scale(1.1);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .timeline-container:hover {
+        transform: translateX(2.5rem) scale(1.1);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .timeline-container:hover {
+        transform: translateX(3.25rem) scale(1.1);
+    }
 }
 /*Fim linha do tempo*/
