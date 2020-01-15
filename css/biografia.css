@@ -1,0 +1,94 @@
+#biografia {
+    padding: 1rem 0;
+    margin: 0;
+    background-color: inherit;
+}
+
+/*Cartao bio*/
+.bio-card {
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #2d2d2d;    
+}
+
+.bio-card picture {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-card picture img {
+    border-radius: 50% 50%;
+    width: 50%;
+}
+
+.bio-card h2 {
+    text-align: center;
+}
+/*Fim cartao bio*/
+
+/* Linha do tempo*/
+/*Linha vertical*/
+.timeline {
+    position: relative;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: .5rem;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: .5rem;
+}
+
+.timeline-container {
+    position: relative;
+    background-color: inherit;
+    max-width: 75%;
+    z-index: 1;
+    transition-property: trasform, left;
+    transition-duration: 1s;
+}
+
+.timeline-container::after {
+    content: '';
+    padding: .6rem;
+    position: absolute;
+    left: .5rem;
+    top: 1rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: .3rem solid #654321;
+    z-index: 2;
+}
+
+.timeline-container:hover {
+    transform: translateX(1rem) scale(1.1);
+}
+
+.timeline-content {
+    padding: 1rem;
+    transition-property: background, left;
+    transition-duration: .5s;
+}
+
+.timeline-content:hover{
+    background-color: white;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.left {
+    left: 2.5rem;
+}
+
+.right {
+    left: 2.5rem;
+}
+
+.left::after, .right::after {
+    left: -2.6rem;
+}
+/*Fim linha do tempo*/

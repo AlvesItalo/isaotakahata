@@ -1,6 +1,10 @@
 @import "biografia.css";
 @import "filmografia.css";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -32,13 +36,13 @@ header {
 }
 
 .video-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    z-index: -1;
+    z-index: -2;
     display: flex;
     justify-content: center;
 }
@@ -95,7 +99,7 @@ nav a {
     z-index: -1;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 410px) {
     .header-content div:nth-child(2) {
         text-align: center;
         flex-grow: 0;
@@ -127,7 +131,7 @@ nav a {
 
 /*Classes genericas*/
 .container {
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 .kanji {
