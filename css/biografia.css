@@ -1,7 +1,6 @@
 #biografia {
-    max-width: 1000px;
     padding: 1rem 0;
-    margin: 0 auto;
+    margin: 0;
     background-color: inherit;
 }
 
@@ -11,7 +10,7 @@
     margin: 1rem auto;
     padding: 1rem;
     background-color: #2d2d2d;  
-    max-width: 450px;  
+    max-width: 360px;  
 }
 
 .bio-card picture {
@@ -32,19 +31,19 @@
     .bio-card {
         margin: 1rem 0 0 1rem;
         float: right;
+        max-width: 500px;
     }
 
     .bio-content p:nth-child(2){
         padding-top: 1rem;
     }
 }
-
 /*Fim cartao bio*/
 
 /* Linha do tempo*/
 .timeline {
     position: relative;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .timeline::after {
@@ -121,6 +120,12 @@
 @media screen and (min-width: 900px) {
     .timeline-container:hover {
         transform: translateX(2.5rem) scale(1.1);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .timeline-container:hover {
+        transform: translateX(3.25rem) scale(1.1);
     }
 }
 /*Fim linha do tempo*/
