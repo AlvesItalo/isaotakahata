@@ -1,6 +1,7 @@
 #biografia {
+    max-width: 1000px;
     padding: 1rem 0;
-    margin: 0;
+    margin: 0 auto;
     background-color: inherit;
 }
 
@@ -120,12 +121,6 @@
 @media screen and (min-width: 900px) {
     .timeline-container:hover {
         transform: translateX(2.5rem) scale(1.1);
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .timeline-container:hover {
-        transform: translateX(3.25rem) scale(1.1);
     }
 }
 /*Fim linha do tempo*/
