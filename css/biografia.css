@@ -10,8 +10,7 @@
     color: white;
     padding: 0;
     margin: 1rem 0;
-    background-color:#4D8FAC;
-    box-shadow: 3px 3px 0 black;
+    background-image: linear-gradient(to right, #1B294B 50%, #4D8FAC 50%);
     max-width: 360px;
 }
 
@@ -51,13 +50,11 @@
 }
 
 .timeline-content {
-    background-image: linear-gradient(to right,  #5E644F 50%, white 50%);;
-    background-size: 200% 100%;
-    background-position: right bottom;
+    background-image: linear-gradient(to right,  #5E644F 50%, white 50%);
     padding: 1rem;
     margin: 0;
     border-left: 1rem solid #6B9362 ;
-    transition: transform, background;
+    transition: transform;
     transition-duration: .6s;
     transform-origin: left;
 }
@@ -67,8 +64,7 @@
 }
 
 .timeline-content:hover {
-    transform: scaleX(1.05);
+    transform: scaleX(1.02);
     color: white;
-    background-position: left bottom;
 }
 /*Fim linha do tempo*/

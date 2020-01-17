@@ -170,6 +170,17 @@ nav a {
     justify-content: flex-end;
 }
 
+.background-fill {
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background;
+    transition-duration: .5s;
+}
+
+.background-fill:hover {
+    background-position: left bottom;
+}
+
 @media screen and (min-width: 900px){
     .container {
         margin: 1rem auto;
