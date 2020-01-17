@@ -11,7 +11,7 @@
     padding: 0;
     margin: 1rem 0;
     background-image: linear-gradient(to right, #1B294B 50%, #4D8FAC 50%);
-    max-width: 360px;
+    max-width: 410px;
 }
 
 .bio-card div {
@@ -45,6 +45,7 @@
 
 /* Linha do tempo*/
 .timeline {
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
 }
