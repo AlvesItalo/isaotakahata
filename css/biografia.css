@@ -2,15 +2,21 @@
     padding: 1rem 0;
     margin: 0;
     background-color: inherit;
+    border-top: 1rem solid #665343 ;
 }
 
 /*Cartao bio*/
 .bio-card {
     color: white;
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: #2d2d2d;  
-    max-width: 360px;  
+    padding: 0;
+    margin: 1rem 0;
+    background-color:#4D8FAC;
+    box-shadow: 3px 3px 0 black;
+    max-width: 360px;
+}
+
+.bio-card div {
+    padding: 0 1rem 1rem;
 }
 
 .bio-card picture {
@@ -19,19 +25,17 @@
 }
 
 .bio-card picture img {
-    border-radius: 50% 50%;
-    width: 50%;
+    width: 100%;
 }
 
 .bio-card h2 {
     text-align: center;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 600px) {
     .bio-card {
         margin: 1rem 0 0 1rem;
         float: right;
-        max-width: 500px;
     }
 
     .bio-content p:nth-child(2){
@@ -42,90 +46,29 @@
 
 /* Linha do tempo*/
 .timeline {
-    position: relative;
-    margin: 2rem auto;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: .5rem;
-    background-color: black;
-    top: 0;
-    bottom: 0;
-    left: .5rem;
-}
-
-.timeline-container {
-    margin: 1rem 0;
-    position: relative;
-    background-color: inherit;
-    max-width: 75%;
-    z-index: 1;
-    transition-property: trasform, left;
-    transition-duration: 1s;
-}
-
-.timeline-container::after {
-    content: '';
-    padding: .6rem;
-    position: absolute;
-    left: .5rem;
-    top: 1rem;
-    background-color: whitesmoke;
-    border-radius: 50%;
-    border: .3rem solid #654321;
-    z-index: 2;
-}
-
-.timeline-container:hover {
-    transform: translateX(1rem) scale(1.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .timeline-content {
+    background-image: linear-gradient(to right,  #5E644F 50%, white 50%);;
+    background-size: 200% 100%;
+    background-position: right bottom;
     padding: 1rem;
-    transition-property: background, left;
-    transition-duration: .5s;
+    margin: 0;
+    border-left: 1rem solid #6B9362 ;
+    transition: transform, background;
+    transition-duration: .6s;
+    transform-origin: left;
 }
 
-.timeline-content:hover{
-    background-color: white;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.2);
+.timeline-content h2 {
+    margin: 0;
 }
 
-.left {
-    left: 2.5rem;
-}
-
-.right {
-    left: 2.5rem;
-}
-
-.left::after, .right::after {
-    left: -2.6rem;
-}
-
-@media screen and (min-width: 490px) {
-    .timeline-container:hover {
-        transform: translateX(1.5rem) scale(1.1);
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .timeline-container:hover {
-        transform: translateX(2rem) scale(1.1);
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .timeline-container:hover {
-        transform: translateX(2.5rem) scale(1.1);
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .timeline-container:hover {
-        transform: translateX(3.25rem) scale(1.1);
-    }
+.timeline-content:hover {
+    transform: scaleX(1.05);
+    color: white;
+    background-position: left bottom;
 }
 /*Fim linha do tempo*/

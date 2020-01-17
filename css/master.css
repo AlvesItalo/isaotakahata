@@ -22,12 +22,10 @@ header {
 }
 
 .overlay-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6));
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.3));
     z-index: -1;
 
 }
@@ -70,7 +68,7 @@ header h1 {
 #isao-kanji {
     padding: .4rem;
     color: #f4de6b;
-    border: 1px solid #f4de6b;
+    border: 2px solid #f4de6b;
     offset: hidden;
     animation-name: reveal-top;
     animation-duration: 3s;
@@ -141,6 +139,7 @@ nav a {
 
 /*Classes genericas*/
 .container {
+    max-width: 900px;
     margin: 1rem;
 }
 
@@ -169,6 +168,12 @@ nav a {
     margin: 0;
     display: flex;
     justify-content: flex-end;
+}
+
+@media screen and (min-width: 900px){
+    .container {
+        margin: 1rem auto;
+    }
 }
 /*Fim classes genericas*/
 
