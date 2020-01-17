@@ -1,6 +1,10 @@
 @import "biografia.css";
 @import "filmografia.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -17,7 +21,7 @@ body {
 header {
     margin: 0;
     color: white;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
 }
 
@@ -27,12 +31,13 @@ header {
     height: 100vh;
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.3));
     z-index: -1;
-
 }
 
 .header-content {
-    height: 80vh;
+    padding: 1rem;
+    height: 90vh;
     width: 100%;
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,13 +77,25 @@ header h1 {
     offset: hidden;
     animation-name: reveal-top;
     animation-duration: 3s;
+    transition: all .5s;
+}
+
+#isao-kanji:hover {
+    color: white;
+    background-color: #f4de6b;
+    box-shadow: 6px 6px 0 black;
 }
 
 #isao-nome {
+    margin-top: .5rem;
     font-size: 3rem;
     animation-name: opacity-flow;
     animation-duration: 13s;
     animation-iteration-count: 1;
+}
+
+#isao-nome:hover {
+    text-shadow: 2px 1px 0 #68427a;
 }
 
 nav {
@@ -91,10 +108,18 @@ nav {
 
 nav a {
     color: white;
+    padding: .5rem;
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     outline: none;
+    transition: all .5s;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 6px 6px 0 black;;
 }
 
 .gradiente {
@@ -103,11 +128,10 @@ nav a {
     left: 0;
     height: 15vh;
     width: 100vw;
-    
     z-index: -1;
 }
 
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 397px) {
     .header-content div:nth-child(2) {
         text-align: center;
         flex-grow: 0;
@@ -116,6 +140,14 @@ nav a {
 
     header nav {
         justify-content: space-around;
+    }
+
+    #isao-nome {
+        font-size: 3rem;
+    }
+
+    #isao-overlay {
+        bottom: 48vh;
     }
     
 }
@@ -131,6 +163,11 @@ nav a {
 
     #isao-nome {
         font-size: 5rem;
+    }
+
+    #isao-overlay {
+        bottom: 44vh;
+        height: 20vh;
     }
 
 }
@@ -190,7 +227,7 @@ nav a {
 
 /*Animation keyframes*/
 @keyframes opacity-flow {
-    0%{transform: translateX(-10rem); opacity: 0%}
+    0%{transform: translateX(-30rem); opacity: 0%}
     20%{transform: translateY(0); opacity: 100%}
     65%{opacity: 100%}
     75%{opacity: 25%}
