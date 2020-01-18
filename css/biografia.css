@@ -7,10 +7,10 @@
 
 /*Cartao bio*/
 .bio-card {
-    color: white;
+    color: #f2eecb;
     padding: 0;
     margin: 1rem 0;
-    background-image: linear-gradient(to right, #1B294B 50%, #4D8FAC 50%);
+    background-color: #4D8FAC;
     max-width: 410px;
 }
 
@@ -51,13 +51,12 @@ img:hover {
 
 /* Linha do tempo*/
 .timeline {
-    padding: 1rem 0;
     display: flex;
     flex-direction: column;
 }
 
 .timeline-content {
-    background-image: linear-gradient(to right,  #f1f1f1 50%, white 50%);
+    background-image: linear-gradient(to right, #6B9362 50%, white 50%);
     padding: 1rem;
     margin: 0;
     border-left: 1rem solid #6B9362 ;
@@ -72,5 +71,16 @@ img:hover {
 
 .timeline-content:hover {
     transform: scaleX(1.02);
+    color: #f2eecb;
+    box-shadow: 0 .5rem 0 #4f4f4f;
 }
 /*Fim linha do tempo*/
+
+#video-tribute {
+    display: flex;
+    justify-content: center;
+}
+
+#video-tribute iframe {
+    width: 100%;
+}

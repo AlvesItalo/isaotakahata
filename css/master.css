@@ -49,7 +49,7 @@ header {
 }
 
 .video-bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
@@ -126,7 +126,8 @@ header nav a {
 }
 
 header nav a:hover {
-    text-shadow: 3px 2px 1px #68427a;
+    text-shadow: 0 .5rem 1rem black;
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 397px) {
@@ -147,7 +148,6 @@ header nav a:hover {
     #isao-overlay {
         bottom: 48vh;
     }
-    
 }
 
 @media screen and (min-width: 900px) {
@@ -238,11 +238,23 @@ header nav a:hover {
     justify-content: center;
 }
 
+.bounce {
+    animation-name: bounce;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
 @media screen and (min-width: 900px){
     .container {
         margin: 1rem auto;
     }
 }
+
+@keyframes bounce {
+    50% {transform: translateY(-.2rem)}
+    100%{transform: translateY(0)}
+}
+
 /*Fim classes genericas*/
 
 /*Animation keyframes*/
