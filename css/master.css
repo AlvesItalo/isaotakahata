@@ -102,8 +102,9 @@ header h1 {
 #totoro {
     position: absolute;
     z-index: -2;
-    bottom: 0;
-    right: 0;
+    bottom: 0vh;
+    right: 0vw;
+    height: 50vh;
 }
 
 header nav {
