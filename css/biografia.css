@@ -21,14 +21,20 @@
 .bio-card picture {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .bio-card picture img {
     width: 100%;
+    transition: transform .5s ease;
 }
 
 .bio-card h2 {
     text-align: center;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 600px) {
