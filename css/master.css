@@ -127,7 +127,7 @@ header nav a {
 
 header nav a:hover {
     text-shadow: 0 .5rem 1rem black;
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 @media screen and (min-width: 397px) {
@@ -200,6 +200,7 @@ header nav a:hover {
 }
 
 .title h1 {
+    font-size: 2rem;
     margin: 0;
     display: flex;
     justify-content: flex-end;
@@ -227,6 +228,7 @@ header nav a:hover {
 .link-collapse-label {
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .link-collapse {
@@ -234,7 +236,7 @@ header nav a:hover {
 }   
 
 .link-collapse:checked + .collapse {
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
@@ -244,9 +246,19 @@ header nav a:hover {
     animation-iteration-count: infinite;
 }
 
+@media screen and (min-width: 400px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 900px){
     .container {
         margin: 1rem auto;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
     }
 }
 
