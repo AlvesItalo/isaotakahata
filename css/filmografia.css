@@ -23,6 +23,10 @@
     background-color: #6B9362;
 }
 
+.filme a {
+    text-decoration: none;
+}
+
 .filme:hover {
     transform: scale(1.05);
 }
