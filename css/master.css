@@ -173,31 +173,32 @@ header nav a:hover {
 
 /*Footer*/
 footer {
-    display: flex;
-    flex-wrap: row wrap;
     padding: 1rem;
     margin: 0;
     background-color: #4f4f4f;
 }
 
-footer form {
-    width: 100%;
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-footer form fieldset {
+.footer-content form fieldset {
     display: flex;
     flex-direction: column;
     border: none;
     padding: 0;
 }
 
-footer form fieldset legend{
+.footer-content form fieldset legend{
     color: #f4de6b;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-footer form fieldset *:not(legend) {
+.footer-content form fieldset *:not(legend) {
     padding: 1rem;
     margin: 1rem 0;
     width: 100%;
@@ -206,22 +207,54 @@ footer form fieldset *:not(legend) {
     border-radius: .2rem;
 }
 
-footer form input {
+.footer-content form input {
     border: none;
 }
 
-
-footer form button {
-    margin: 1rem 0;
+.footer-content form button {
+    margin: 1rem 0 0;
     padding: .5rem;
     font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     background: none;
     color: #f4de6b;
     border: 2px solid #f4de6b;
-
+    cursor: pointer;
+    outline: none;
 }
 
+.footer-content form button:hover {
+    color: black;
+    background-color: #f4de6b;
+}
+
+.footer-content nav {
+    color: #f2eecb;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .5rem;    
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.footer-content nav i{
+    justify-self: center;
+    font-size: 3rem;
+}
+
+.footer-content nav i:nth-child(3){
+    font-size: 2.5rem;
+}
+
+@media screen and (min-width: 662px) {
+    .footer-content {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-content nav {
+        grid-template-columns: 1fr;
+    }    
+}
 /*Fim footer/
 
 /*Classes genericas*/
