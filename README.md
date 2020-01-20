@@ -1,8 +1,8 @@
 # Isao Takahata
 Um tributo ao diretor Isao Takahata do studio ghibili. Projeto da disciplina de linguagens de marcação para o IFPB. Dentro dos limites da disciplina tentamos construir um site que representasse um pouco da arte de isao. Aproveitando dos conceitos da estética japonesa como o "Ma"(espaço-entre), irregularidade e assímetria. As cores foram inspiradas em suas últimas obras e representam:
-- <font style="color:#f2eec">#f2eecb</font>: o papel tradicional japonês
-- <font style="color:#6B9362">#6B9362</font>: cor do broto de bambu
-- <font style="color:#665343">#665343</font>: cor tradicional do teatro kabuki que representa a contemplação no chá
+- #f2eecb: o papel tradicional japonês
+- #6B9362: cor do broto de bambu
+- #665343: cor tradicional do teatro kabuki que representa a contemplação no chá
 
 ## Equipe
 - [Felipe Sousa](https://www.linkedin.com/in/felipe-sousa-1ba813197/)
