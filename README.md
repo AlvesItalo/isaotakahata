@@ -18,6 +18,6 @@ Um tributo ao diretor Isao Takahata do studio ghibili. Projeto da disciplina de 
 
 ## Funcionalidades
 - Tela inicial: vídeo de fundo sobreposto por gradiente e menu simples
-- Seção de biografia: cartão de informaçoes, linha do tempo e vídeo de tributo
+- Seção de biografia: cartão de informações, linha do tempo e vídeo de tributo
 - Seção de filmografia: grid com capas dos filmes, classificação rotten tomatoes, ano de lançamento
 - Rodapé: área de contato e redes socias
