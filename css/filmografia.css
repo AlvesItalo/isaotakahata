@@ -85,11 +85,6 @@
 #inverno{
     background-image: url(../img/inverno.jpg);
 }
-
-.classind {
-    align-self: flex-end;  
-    height: 50px; 
-}
     
 .ano {
     color: white;
