@@ -46,6 +46,13 @@
     opacity: 80%;
 }
 
+.ano {
+    color: white;
+    text-shadow: 3px 2px 0 black;
+    align-self: flex-end;
+    order: -1;
+}
+
 #kaguya {
     background-image: url(../img/kaguya.jpg);
 }
@@ -85,14 +92,6 @@
 #inverno{
     background-image: url(../img/inverno.jpg);
 }
-    
-.ano {
-    color: white;
-    text-shadow: 3px 2px 0 black;
-    align-self: flex-end;
-    order: -1;
-}
-
 
 @media screen and (min-width: 720px){  
     .filmes-grid {
