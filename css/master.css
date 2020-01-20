@@ -171,6 +171,58 @@ header nav a:hover {
 }
 /*Fim home*/
 
+/*Footer*/
+footer {
+    display: flex;
+    flex-wrap: row wrap;
+    padding: 1rem;
+    margin: 0;
+    background-color: #4f4f4f;
+}
+
+footer form {
+    width: 100%;
+}
+
+footer form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+}
+
+footer form fieldset legend{
+    color: #f4de6b;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer form fieldset *:not(legend) {
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    background-color: #f2eecb;
+    font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: .2rem;
+}
+
+footer form input {
+    border: none;
+}
+
+
+footer form button {
+    margin: 1rem 0;
+    padding: .5rem;
+    font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background: none;
+    color: #f4de6b;
+    border: 2px solid #f4de6b;
+
+}
+
+/*Fim footer/
 
 /*Classes genericas*/
 .container {
@@ -195,15 +247,20 @@ header nav a:hover {
     justify-content: flex-end;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
 .title {
+    display: flex;
     flex-direction: column;
 }
 
 .title h1 {
     font-size: 2rem;
     margin: 0;
-    display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .background-fill {

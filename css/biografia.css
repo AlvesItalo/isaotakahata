@@ -56,9 +56,6 @@ img:hover {
     padding: 1rem;
     margin: 0;
     border-left: 1rem solid #6B9362;
-    transition: transform;
-    transition-duration: .6s;
-    transform-origin: left;
 }
 
 .timeline-content h2 {
@@ -66,9 +63,7 @@ img:hover {
 }
 
 .timeline-content:hover {
-    transform: scaleX(1.02);
     color: #f2eecb;
-    box-shadow: 0 .5rem 0 #4f4f4f;
 }
 /*Fim linha do tempo*/
 
@@ -85,7 +80,6 @@ img:hover {
     #bio-text {
         display: block;
     }
-
     #video-tribute iframe {
         height: 400px;
     }

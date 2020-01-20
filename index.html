@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e07233618b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
             </video>
         </div>
         <div class="overlay-bg"></div>
-        <div class="header-content container">
+        <div class="header-content container flex-column">
             <div class="flex-right">
                 <label for="totoro-collapse" id="isao-kanji" class="kanji">高畑勲</label>
                 <input type="checkbox" class="link-collapse" id="totoro-collapse">
@@ -36,7 +37,7 @@
     </header>
     <section id="biografia">
         <div class="container">
-            <div class="flex-right title">
+            <div class="title">
                 <h1 class="kanji">紀伝</h1>
                 <h1>Biografia</h1>
             </div>
@@ -146,13 +147,18 @@
             <div class="footer-content">
                 <form action="">
                     <fieldset>
-                        <input type="text" placeholder="Nome" name="nome">
-                        <input type="email" placeholder="Email" name="email">
-                        <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Deixe sua mansagem..."></textarea>
+                        <legend>Deixe uma mensagem</legend>
+                        <input type="text" placeholder="Nome" name="nome" class="grid-name">
+                        <input type="email" placeholder="Email" name="email" class="grid-email">
+                        <textarea name="mensagem" id="msg"  class="grid-message" cols='10' placeholder="Escreva algo">asda</textarea>
                     </fieldset>
+                    <button type="submit">Enviar</button>
                 </form>
                 <nav>
-
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
                 </nav>
             </div>
         </div>
