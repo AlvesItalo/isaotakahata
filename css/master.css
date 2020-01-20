@@ -368,6 +368,15 @@ footer p {
     animation-iteration-count: infinite;
 }
 
+.img-zoom:hover {
+    offset: hidden;
+    transition: transform .5s ease;
+}
+
+.img-zoom:hover {
+    transform: scale(1.2);
+}
+
 @media screen and (min-width: 400px) {
     .desktop-hidden {
         display: none;

@@ -3,19 +3,28 @@
 }
 
 .filmes-grid {
+    padding: 2rem 0;
+    color: #f2eecb;
     display: grid;
     grid-template-rows: repeat(10, 1fr) ;
     width: 290px;
     justify-content: center;
     margin: 1rem auto;
-    row-gap: 1rem;
+    row-gap: 2rem;
 }
 
 .filme {
+    padding: 0;
     display: flex;
-    width: 300px;
+    width: 280px;
     flex-direction: column;
     text-align: center;
+    transition: transform .5s ease;
+    background-color: #6B9362;
+}
+
+.filme:hover {
+    transform: scale(1.05);
 }
 
 .imagem {
@@ -23,11 +32,10 @@
     align-self: center;
     display: flex;
     height: 388px;
-    width: 272px;
+    width: 100%;
     flex-flow: wrap;
     justify-content: space-between;
     background-size: contain;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .notas {
@@ -95,7 +103,7 @@
     .filmes-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        column-gap: .5rem;
+        column-gap: .6rem;
         row-gap: 2rem;
         width: 200px;
     }
@@ -106,6 +114,5 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
-
 }
   

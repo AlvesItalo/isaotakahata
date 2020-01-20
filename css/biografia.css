@@ -33,10 +33,6 @@
     text-align: center;
 }
 
-img:hover {
-    transform: scale(1.1);
-}
-
 @media screen and (min-width: 600px) {
     .bio-card {
         margin: 1rem 0 0 1rem;
