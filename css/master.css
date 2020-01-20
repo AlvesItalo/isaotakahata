@@ -195,7 +195,7 @@ footer {
 .footer-content form fieldset legend{
     color: #f4de6b;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .footer-content form fieldset *:not(legend) {
@@ -205,10 +205,7 @@ footer {
     background-color: #f2eecb;
     font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: .2rem;
-}
-
-.footer-content form input {
-    border: none;
+    border: 2px solid #f4de6b;
 }
 
 .footer-content form button {
@@ -221,6 +218,7 @@ footer {
     border: 2px solid #f4de6b;
     cursor: pointer;
     outline: none;
+    transition: background .5s ease;
 }
 
 .footer-content form button:hover {
@@ -229,21 +227,42 @@ footer {
 }
 
 .footer-content nav {
-    color: #f2eecb;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: .5rem;    
+    grid-gap: .5rem;
     margin-top: 1rem;
     padding: 1rem;
 }
 
-.footer-content nav i{
+.footer-content nav a {
+    color: #f2eecb;
     justify-self: center;
     font-size: 3rem;
+    outline: none;
 }
 
-.footer-content nav i:nth-child(3){
-    font-size: 2.5rem;
+.footer-content nav a i {
+    transition: color .5s ease;
+}
+
+#twitter:hover {
+    color: #55acee;
+}
+
+#youtube:hover {
+    color: #cd201f;
+}
+
+#facebook:hover {
+    color: #3b5999;
+}
+
+#instagram:hover {
+    color: #e4405f;
+}
+
+footer p {
+    color: #f2eecb;
 }
 
 @media screen and (min-width: 662px) {
@@ -251,9 +270,22 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+
+    .footer-content form {
+        display: flex;
+    }
+    
+    .footer-content form button {
+        margin: 1rem;
+        align-self: flex-end;
+        height: 3rem;
+    }
+
     .footer-content nav {
+        margin: 0;
         grid-template-columns: 1fr;
-    }    
+        grid-gap: 0;
+    }
 }
 /*Fim footer/
 

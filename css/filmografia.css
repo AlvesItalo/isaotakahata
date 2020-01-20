@@ -1,0 +1,111 @@
+#filmografia {
+    border-top: 1rem solid #665343;
+}
+
+.filmes-grid {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr) ;
+    width: 290px;
+    justify-content: center;
+    margin: 1rem auto;
+    row-gap: .5rem;
+}
+
+.filme {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.imagem {
+    padding: 1rem;
+    align-self: center;
+    display: flex;
+    height: 388px;
+    width: 272px;
+    flex-flow: wrap;
+    justify-content: space-between;
+    background-size: contain;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.notas {
+    padding: .3rem;
+    position: absolute;
+    color: #f4de6b;
+    background-color: black;
+    opacity: 80%;
+}
+
+#kaguya {
+    background-image: url(../img/kaguya.jpg);
+}
+
+#only {
+    background-image: url(../img/only.jpg);
+}
+
+#pompoko {
+    background-image: url(../img/pompoko.jpg);
+}
+
+#tumulo {
+    background-image: url(../img/tumulo.jpg);
+}
+
+#yamadas {
+    background-image: url(../img/yamadas.jpg);
+}
+
+#goshu {
+    background-image: url(../img/goshu.png);
+}
+
+#horus {
+    background-image: url(../img/horus.jpg);
+}
+
+#chie {
+    background-image: url(../img/Chie.png);
+}
+
+#panda {
+    background-image: url(../img/panda.jpg);
+}
+
+#inverno{
+    background-image: url(../img/inverno.jpg);
+}
+
+.classind {
+    align-self: flex-end;  
+    height: 50px; 
+}
+    
+.ano {
+    color: white;
+    text-shadow: 3px 2px 0 black;
+    align-self: flex-end;
+    order: -1;
+}
+
+
+@media screen and (min-width: 720px){  
+    .filmes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: .5rem;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .filmes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+}
+  
