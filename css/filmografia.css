@@ -1,116 +1,115 @@
 #filmografia {
-    border-top: 1rem solid #665343;
+  border-top: 1rem solid #665343;
 }
 
 .filmes-grid {
-    padding: 2rem 0;
-    color: #f2eecb;
-    display: grid;
-    grid-template-rows: repeat(10, 1fr) ;
-    width: 290px;
-    justify-content: center;
-    margin: 1rem auto;
-    row-gap: 2rem;
+  padding: 2rem 0;
+  color: #f2eecb;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  width: 290px;
+  justify-content: center;
+  margin: 1rem auto;
+  row-gap: 2rem;
 }
 
 .filme {
-    padding: 0;
-    display: flex;
-    width: 280px;
-    flex-direction: column;
-    text-align: center;
-    transition: transform .5s ease;
-    background-color: #6B9362;
+  padding: 0;
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.5s ease;
+  background-color: #6b9362;
 }
 
 .filme a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .filme:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .imagem {
-    padding: 1rem;
-    align-self: center;
-    display: flex;
-    height: 388px;
-    width: 100%;
-    flex-flow: wrap;
-    justify-content: space-between;
-    background-size: contain;
+  padding: 1rem;
+  align-self: center;
+  display: flex;
+  height: 388px;
+  width: 100%;
+  flex-flow: wrap;
+  justify-content: space-between;
+  background-size: contain;
 }
 
 .notas {
-    padding: .3rem;
-    position: absolute;
-    color: #f4de6b;
-    background-color: black;
-    opacity: 80%;
+  padding: 0.3rem;
+  position: absolute;
+  color: #f4de6b;
+  background-color: black;
+  opacity: 80%;
 }
 
 .ano {
-    color: white;
-    text-shadow: 3px 2px 0 black;
-    align-self: flex-end;
-    order: -1;
+  color: white;
+  text-shadow: 3px 2px 0 black;
+  align-self: flex-end;
+  order: -1;
 }
 
 #kaguya {
-    background-image: url(../img/kaguya.jpg);
+  background-image: url(../img/kaguya.jpg);
 }
 
 #only {
-    background-image: url(../img/only.jpg);
+  background-image: url(../img/only.jpg);
 }
 
 #pompoko {
-    background-image: url(../img/pompoko.jpg);
+  background-image: url(../img/pompoko.jpg);
 }
 
 #tumulo {
-    background-image: url(../img/tumulo.jpg);
+  background-image: url(../img/tumulo.jpg);
 }
 
 #yamadas {
-    background-image: url(../img/yamadas.jpg);
+  background-image: url(../img/yamadas.jpg);
 }
 
 #goshu {
-    background-image: url(../img/goshu.png);
+  background-image: url(../img/goshu.png);
 }
 
 #horus {
-    background-image: url(../img/horus.jpg);
+  background-image: url(../img/horus.jpg);
 }
 
 #chie {
-    background-image: url(../img/chie.jpg);
+  background-image: url(../img/chie.jpg);
 }
 
 #panda {
-    background-image: url(../img/panda.jpg);
+  background-image: url(../img/panda.jpg);
 }
 
-#inverno{
-    background-image: url(../img/inverno.jpg);
+#inverno {
+  background-image: url(../img/inverno.jpg);
 }
 
-@media screen and (min-width: 720px){  
-    .filmes-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        column-gap: .6rem;
-        row-gap: 2rem;
-        width: 200px;
-    }
+@media screen and (min-width: 720px) {
+  .filmes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 0.6rem;
+    row-gap: 2rem;
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
-    .filmes-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
+  .filmes-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
-  

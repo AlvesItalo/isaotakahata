@@ -1,82 +1,96 @@
 #biografia {
-    padding: 1rem 0;
-    margin: 0;
-    background-color: inherit;
-    border-top: 1rem solid #665343;
+  padding: 1rem 0;
+  margin: 0;
+  background-color: inherit;
+  border-top: 1rem solid #665343;
 }
 
 /*Cartao bio*/
 .bio-card {
-    color: #f2eecb;
-    padding: 0;
-    margin: 1rem 0;
-    background-color: #6B9362;
-    max-width: 410px;
+  color: #f2eecb;
+  padding: 0;
+  margin: 1rem 0;
+  background-color: #6b9362;
+  max-width: 410px;
 }
 
 .bio-card div {
-    padding: 0 1rem 1rem;
+  padding: 0 1rem 1rem;
 }
 
-.bio-card picture {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
 }
 
-.bio-card picture img {
-    width: 100%;
-    transition: transform .5s ease;
+#image {
+  align-self: center;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+#img-caption {
+  font-size: 0.8em;
+  position: relative;
+  top: -50px;
+  margin: 0 1em;
+  padding: 0.5em;
+  background-color: #6b9362;
+  width: fit-content;
 }
 
 .bio-card h2 {
-    text-align: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {
-    .bio-card {
-        margin: 1rem 0 0 1rem;
-        float: right;
-    }
+  .bio-card {
+    margin: 1rem 0 0 1rem;
+    float: right;
+  }
 }
 /*Fim cartao bio*/
 
 /* Linha do tempo*/
 .timeline {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .timeline-content {
-    background-image: linear-gradient(to right, #6B9362 50%, white 50%);
-    padding: 1rem;
-    margin: 0;
-    border-left: 1rem solid #6B9362;
+  background-image: linear-gradient(to right, #6b9362 50%, white 50%);
+  padding: 1rem;
+  margin: 0;
+  border-left: 1rem solid #6b9362;
 }
 
 .timeline-content h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .timeline-content:hover {
-    color: #f2eecb;
+  color: #f2eecb;
 }
 /*Fim linha do tempo*/
 
 #video-tribute {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #video-tribute iframe {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 400px) {
-    #bio-text {
-        display: block;
-    }
-    #video-tribute iframe {
-        height: 400px;
-    }
+  #bio-text {
+    display: block;
+  }
+  #video-tribute iframe {
+    height: 400px;
+  }
 }

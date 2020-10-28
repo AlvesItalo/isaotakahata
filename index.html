@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Language" content="pt-br">
@@ -7,10 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Isao Takahata</title>
     <link rel="stylesheet" href="css/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e07233618b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="video-bg">
@@ -26,8 +28,8 @@
                 <img id="totoro" src="img/totoro.gif" alt="Totoro" class="collapse">
             </div>
             <div>
-                <h1 id="isao-nome">Isao Takahata</h1>
-            </div>            
+                <h1 id="title">Isao Takahata</h1>
+            </div>
             <nav>
                 <a href="#biografia">Biografia</a>
                 <a href="#filmografia">Filmografia</a>
@@ -35,236 +37,286 @@
         </div>
         <div class="gradiente"></div>
     </header>
-    <section id="biografia">
-        <div class="container">
-            <div class="title">
-                <h1 class="kanji">紀伝</h1>
-                <h1>Biografia</h1>
-            </div>
-            <div class="bio-content">
-                <div class="bio-card">
-                    <picture>
-                        <img src="img/isao-about.jpg" alt="Isao Takahata" class="img-zoom">
-                    </picture>
-                    <h2>Isao Takahata</h2>
-                    <div>
-                        <p>
-                            <strong>Nascimento:</strong> 29 de outubro de 1935 (Uji Yamada, Província de Mie, Japão)
-                            <label for="map-collapse" class="link-collapse-label">Mostrar mapa<i class="bounce material-icons">map</i></label>
-                        </p>              
-                        <input type="checkbox" class="link-collapse" id="map-collapse">
-                        <span class="collapse"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210500.43285646444!2d136.58505778777842!3d34.47576713214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004509910426ec5%3A0xfa571fb7f3fe1119!2zSXNlLCBNaWUsIEphcMOjbw!5e0!3m2!1spt-BR!2sbr!4v1579302422654!5m2!1spt-BR!2sbr"></iframe></span>
-                        <p><strong>Falecimento:</strong> 05 de abril de 2018 (Tóquio, Japão)</p>
-                        <p><strong>Idade:</strong> 82 anos</p>
-                        <p><strong>Educação:</strong> Universidade de Tóquio</p>
-                        <p><strong>Ocupação:</strong> Diretor, roteirista, produtor</p>
-                    </div>                
+    <main id="main">
+        <section id="biografia">
+            <div class="container">
+                <div class="title">
+                    <h1 class="kanji">紀伝</h1>
+                    <h1>Biografia</h1>
                 </div>
-                <p><strong>Isao Takahata</strong> foi um diretor, animador, roteirista e produtor que ganhou aclamação da crítica internacional por seu trabalho como diretor de filmes de animação. Takahata é o co-fundador do Studio Ghibli, juntamente com seu parceiro de longo tempo de colaboração, Hayao Miyazaki.</p>
-                <label for="text-collapse" class="link-collapse-label desktop-hidden">Mostrar mais<i class="material-icons bounce">arrow_drop_down</i></label>
-                <input type="checkbox" id="text-collapse" class="link-collapse desktop-checked">
-                <div id="bio-text" class="collapse">
-                    <p>Já dirigiu filmes com o temática de guerra, como O Túmulo dos Vagalumes, o drama  romântico Only Yesterday, a aventura ecológica Pom Poko e a comédia Meus Vizinhos os Yamadas. Destes, Túmulo dos Vagalumes é considerado pelo crítico de cinema Roger Ebert como um dos maiores filmes de guerra de todos os tempos.</p>
-                    <p>Diferentemente da maioria dos diretores de animações, Takahata não desenhava e nunca trabalhou como animador antes de se tornar um diretor de pleno direito. De acordo com Hayao Miyazaki, “música e estudo são os seus hobbies”. Takahata se formou na Universidade de Tóquio no curso de literatura francesa em 1959.</p>
-                    <p>Takahata foi influenciado pelo neo-realismo italiano, Jacques Prévert, e filmes de Nova onda francesa durante os anos 1960. Ladrões de Bicicletas tem sido citado como influência especificamente 3000 Leagues in Search of Mother. Essas influências fazem o trabalho de Takahata diferente da maioria de animação, que se concentram na fantasia. Seus filmes, pelo contrário, são realistas com tons expressionistas.</p>
-                    <p>A influência de neo-realismo em seu filme é evidente na quantidade de atenção aos detalhes que ele tem na exibição de eventos mundanos diários.
-                    <p>Episódios completos de seus primeiros programas de TV foram dedicados a olhar para eventos, tais como ir à igreja toda semana, ter um emprego de limpar garrafas, ou detalhando os agricultores no trabalho que fazem no campo.</p>
-                    <p>Todos esses eventos são mostrados em detalhes meticulosos e muitas vezes formam uma parte importante de sua obra. Com a exceção de Horus: O Príncipe do Sol, Pom Poko e Gauche: O Violoncelista, a maioria de suas obras são dramas que acontecem principalmente em ambientes realistas.</p>
-                    <p>Um dos filmes mais elogiados de Takahata é Omohide Poro Poro (Only Yesterday) de 1991. Um filme aponta diretamente para um público adulto.</p>
-                    <p>Omohide Poro Poro gira em torno de Taeko, uma única mulher que trabalha em um escritório em Tóquio, que tira férias anuais na zona rural para trabalhar como na lavoura. Durante suas férias, Taeko encontra-se olhando para trás nostalgicamente em sua juventude como uma colegial crescendo em 1966 e, simultaneamente, tenta resolver seus problemas atuais com o amor e a carreira.</p>
-                </div>
-                <span class="clear"></span>
-                <label for="timeline-collapse" class="link-collapse-label"><h3>Mostrar linha do tempo<i class="material-icons bounce">arrow_drop_down</i></h3></label>
-                <input type="checkbox" id="timeline-collapse" class="link-collapse">
-                <div class="timeline collapse">
-                    <div class="timeline-content background-fill">
-                        <h2>1935</h2>
-                        <p>Infância durante a segunda guerra mundial.</p>
-                    </div>
-                    <div class="timeline-content background-fill">
-                        <h2>1959</h2>
-                        <p>Graduação em literatura francesa pela universidade de Tóquio. Entrada na Toei animation como diretor.</p>
-                    </div>
-                    <div class="timeline-content background-fill">
-                        <h2>1968</h2>
-                        <p>Lançamento de Horus o príncipe do sol, primeira animação dirigida por Isao..</p>
-                    </div>
-                    <div class="timeline-content background-fill">
-                        <h2>1971</h2>
-                        <p>União com Miyazaki e Yōichi para criação da Shin-Ei Animation.</p>
-                    </div>
-                    <div class="timeline-content background-fill">
-                        <h2>1974</h2>
-                        <p>Entrada na Zuyo Animation.</p>
-                    </div>
-                    <div class="timeline-content background-fill">
-                        <h2>1975</h2>
-                        <p>Zuyo transforma-se em Nippon Animation.</p>
-                    </div>
-                    <div class="timeline-content background-fill">
-                        <h2>1981</h2>
-                        <p>Saída da Nippon para a Telecom Animation.</p>
-                    </div>
-                    <div class="timeline-content background-fill">
-                        <h2>1985</h2>
-                        <p>Isao e Miyazaki fundam o Studio Ghibili após o sucesso de Nausicä do vale boreal.</p>
-                    </div>
-                </div>
-                <h2>Assista a este tributo:</h2>
-                <div id="video-tribute">                    
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/P96a_NcnfFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="filmografia">
-        <div class="container">
-            <div class="flex-right title">
-                <h1 class="kanji">制作</h1>
-                <h1>Filmografia</h1>
-            </div>  
-            <div class="filmes-grid">
-                <div class="filme">
-                    <h3>O conto da princesa Kaguya</h3>
-                    <a href="https://www.youtube.com/watch?v=LBohvCiLZ34" target="blank">
-                        <div class="imagem" id="kaguya">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h2 class="ano">2015</h2>
+                <div class="bio-content">
+                    <div class="bio-card">
+                        <div id="img-div">
+                            <img id="image" src="img/isao-about.jpg" alt="Isao Takahata" class="img-zoom">
+                            <span id="img-caption">Isao recebendo medalha</span>
                         </div>
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>Memórias de Ontem</h3>
-                    <a href="https://www.youtube.com/watch?v=x0ZrjocXVJ4" target="blank">
-                        <div class="imagem" id="only">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h2 class="ano">1991</h2>
-                        </div> 
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>Pom Poko</h3>
-                    <a href="https://www.youtube.com/watch?v=_7cowIHjCD4" target="blank">
-                        <div class="imagem" id="pompoko">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h2 class="ano">1994</h2>
+                        <h2>Isao Takahata</h2>
+                        <div>
+                            <p>
+                                <strong>Nascimento:</strong> 29 de outubro de 1935 (Uji Yamada, Província de Mie, Japão)
+                                <label for="map-collapse" class="link-collapse-label">Mostrar mapa<i
+                                        class="bounce material-icons">map</i></label>
+                            </p>
+                            <input type="checkbox" class="link-collapse" id="map-collapse">
+                            <span class="collapse"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210500.43285646444!2d136.58505778777842!3d34.47576713214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004509910426ec5%3A0xfa571fb7f3fe1119!2zSXNlLCBNaWUsIEphcMOjbw!5e0!3m2!1spt-BR!2sbr!4v1579302422654!5m2!1spt-BR!2sbr"></iframe></span>
+                            <p><strong>Falecimento:</strong> 05 de abril de 2018 (Tóquio, Japão)</p>
+                            <p><strong>Idade:</strong> 82 anos</p>
+                            <p><strong>Educação:</strong> Universidade de Tóquio</p>
+                            <p><strong>Ocupação:</strong> Diretor, roteirista, produtor</p>
                         </div>
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>O Túmulo dos Vagalumes</h3>
-                    <a href="https://www.youtube.com/watch?v=4vPeTSRd580" target="blank">
-                        <div class="imagem" id="tumulo">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h2 class="ano">1988</h2>
+                    </div>
+                    <p id="tribute-info"><strong>Isao Takahata</strong> foi um diretor, animador, roteirista e produtor
+                        que ganhou
+                        aclamação
+                        da crítica internacional por seu trabalho como diretor de filmes de animação. Takahata é o
+                        co-fundador do Studio Ghibli, juntamente com seu parceiro de longo tempo de colaboração, Hayao
+                        Miyazaki.</p>
+                    <label for="text-collapse" class="link-collapse-label desktop-hidden">Mostrar mais<i
+                            class="material-icons bounce">arrow_drop_down</i></label>
+                    <input type="checkbox" id="text-collapse" class="link-collapse desktop-checked">
+                    <div id="bio-text" class="collapse">
+                        <p>Já dirigiu filmes com o temática de guerra, como O Túmulo dos Vagalumes, o drama romântico
+                            Only
+                            Yesterday, a aventura ecológica Pom Poko e a comédia Meus Vizinhos os Yamadas. Destes,
+                            Túmulo
+                            dos Vagalumes é considerado pelo crítico de cinema Roger Ebert como um dos maiores filmes de
+                            guerra de todos os tempos.</p>
+                        <p>Diferentemente da maioria dos diretores de animações, Takahata não desenhava e nunca
+                            trabalhou
+                            como animador antes de se tornar um diretor de pleno direito. De acordo com Hayao Miyazaki,
+                            “música e estudo são os seus hobbies”. Takahata se formou na Universidade de Tóquio no curso
+                            de
+                            literatura francesa em 1959.</p>
+                        <p>Takahata foi influenciado pelo neo-realismo italiano, Jacques Prévert, e filmes de Nova onda
+                            francesa durante os anos 1960. Ladrões de Bicicletas tem sido citado como influência
+                            especificamente 3000 Leagues in Search of Mother. Essas influências fazem o trabalho de
+                            Takahata
+                            diferente da maioria de animação, que se concentram na fantasia. Seus filmes, pelo
+                            contrário,
+                            são realistas com tons expressionistas.</p>
+                        <p>A influência de neo-realismo em seu filme é evidente na quantidade de atenção aos detalhes
+                            que
+                            ele tem na exibição de eventos mundanos diários.
+                        <p>Episódios completos de seus primeiros programas de TV foram dedicados a olhar para eventos,
+                            tais
+                            como ir à igreja toda semana, ter um emprego de limpar garrafas, ou detalhando os
+                            agricultores
+                            no trabalho que fazem no campo.</p>
+                        <p>Todos esses eventos são mostrados em detalhes meticulosos e muitas vezes formam uma parte
+                            importante de sua obra. Com a exceção de Horus: O Príncipe do Sol, Pom Poko e Gauche: O
+                            Violoncelista, a maioria de suas obras são dramas que acontecem principalmente em ambientes
+                            realistas.</p>
+                        <p>Um dos filmes mais elogiados de Takahata é Omohide Poro Poro (Only Yesterday) de 1991. Um
+                            filme
+                            aponta diretamente para um público adulto.</p>
+                        <p>Omohide Poro Poro gira em torno de Taeko, uma única mulher que trabalha em um escritório em
+                            Tóquio, que tira férias anuais na zona rural para trabalhar como na lavoura. Durante suas
+                            férias, Taeko encontra-se olhando para trás nostalgicamente em sua juventude como uma
+                            colegial
+                            crescendo em 1966 e, simultaneamente, tenta resolver seus problemas atuais com o amor e a
+                            carreira.</p>
+                    </div>
+                    <span class="clear"></span>
+                    <label for="timeline-collapse" class="link-collapse-label">
+                        <h3>Mostrar linha do tempo<i class="material-icons bounce">arrow_drop_down</i></h3>
+                    </label>
+                    <input type="checkbox" id="timeline-collapse" class="link-collapse">
+                    <div class="timeline collapse">
+                        <div class="timeline-content background-fill">
+                            <h2>1935</h2>
+                            <p>Infância durante a segunda guerra mundial.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>Meus vizinhos, os Yamadas</h3>
-                    <a href="https://www.youtube.com/watch?v=1C9ujuCPlnY">
-                        <div class="imagem" id="yamadas">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h2 class="ano">1999</h2>
-                        </div>  
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>Goshu: O Violoncelista</h3>
-                    <a href="https://www.youtube.com/watch?v=eoCE6PTgPgI" target="blank">
-                        <div class="imagem" id="goshu">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h2 class="ano">1982</h2>
+                        <div class="timeline-content background-fill">
+                            <h2>1959</h2>
+                            <p>Graduação em literatura francesa pela universidade de Tóquio. Entrada na Toei animation
+                                como
+                                diretor.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>Horus: O príncipe do Sol</h3>
-                    <a href="https://www.youtube.com/watch?v=vgzSyNBDLYs" target="blank">
-                        <div class="imagem" id="horus">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h2 class="ano">1968</h2>
+                        <div class="timeline-content background-fill">
+                            <h2>1968</h2>
+                            <p>Lançamento de Horus o príncipe do sol, primeira animação dirigida por Isao..</p>
                         </div>
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>Jarinko Chie</h3>
-                    <a href="https://www.youtube.com/watch?v=-M7FTQxCaiY" target="blank">
-                        <div class="imagem" id="chie">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h2 class="ano">1981</h2>
+                        <div class="timeline-content background-fill">
+                            <h2>1971</h2>
+                            <p>União com Miyazaki e Yōichi para criação da Shin-Ei Animation.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>Panda Go Panda!</h3>
-                    <a href="https://www.youtube.com/watch?v=BMkShWPtPfY" target="blank">
-                        <div class="imagem" id="panda">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h2 class="ano">1972</h2>
+                        <div class="timeline-content background-fill">
+                            <h2>1974</h2>
+                            <p>Entrada na Zuyo Animation.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="filme">
-                    <h3>Dias de Inverno</h3>
-                    <a href="https://www.youtube.com/watch?v=XRzcaboJprw" target="blank">
-                        <div class="imagem" id="inverno">
-                            <div class="notas">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h2 class="ano">2003</h2>
+                        <div class="timeline-content background-fill">
+                            <h2>1975</h2>
+                            <p>Zuyo transforma-se em Nippon Animation.</p>
                         </div>
-                    </a>
+                        <div class="timeline-content background-fill">
+                            <h2>1981</h2>
+                            <p>Saída da Nippon para a Telecom Animation.</p>
+                        </div>
+                        <div class="timeline-content background-fill">
+                            <h2>1985</h2>
+                            <p>Isao e Miyazaki fundam o Studio Ghibili após o sucesso de Nausicä do vale boreal.</p>
+                        </div>
+                    </div>
+                    <h2>Assista a este tributo:</h2>
+                    <div id="video-tribute">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/P96a_NcnfFM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="filmografia">
+            <div class="container">
+                <div class="flex-right title">
+                    <h1 class="kanji">制作</h1>
+                    <h1>Filmografia</h1>
+                </div>
+                <div class="filmes-grid">
+                    <div class="filme">
+                        <h3>O conto da princesa Kaguya</h3>
+                        <a href="https://www.youtube.com/watch?v=LBohvCiLZ34" target="blank">
+                            <div class="imagem" id="kaguya">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <h2 class="ano">2015</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>Memórias de Ontem</h3>
+                        <a href="https://www.youtube.com/watch?v=x0ZrjocXVJ4" target="blank">
+                            <div class="imagem" id="only">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <h2 class="ano">1991</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>Pom Poko</h3>
+                        <a href="https://www.youtube.com/watch?v=_7cowIHjCD4" target="blank">
+                            <div class="imagem" id="pompoko">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <h2 class="ano">1994</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>O Túmulo dos Vagalumes</h3>
+                        <a href="https://www.youtube.com/watch?v=4vPeTSRd580" target="blank">
+                            <div class="imagem" id="tumulo">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <h2 class="ano">1988</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>Meus vizinhos, os Yamadas</h3>
+                        <a href="https://www.youtube.com/watch?v=1C9ujuCPlnY">
+                            <div class="imagem" id="yamadas">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <h2 class="ano">1999</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>Goshu: O Violoncelista</h3>
+                        <a href="https://www.youtube.com/watch?v=eoCE6PTgPgI" target="blank">
+                            <div class="imagem" id="goshu">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h2 class="ano">1982</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>Horus: O príncipe do Sol</h3>
+                        <a href="https://www.youtube.com/watch?v=vgzSyNBDLYs" target="blank">
+                            <div class="imagem" id="horus">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h2 class="ano">1968</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>Jarinko Chie</h3>
+                        <a href="https://www.youtube.com/watch?v=-M7FTQxCaiY" target="blank">
+                            <div class="imagem" id="chie">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h2 class="ano">1981</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>Panda Go Panda!</h3>
+                        <a href="https://www.youtube.com/watch?v=BMkShWPtPfY" target="blank">
+                            <div class="imagem" id="panda">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h2 class="ano">1972</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="filme">
+                        <h3>Dias de Inverno</h3>
+                        <a href="https://www.youtube.com/watch?v=XRzcaboJprw" target="blank">
+                            <div class="imagem" id="inverno">
+                                <div class="notas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h2 class="ano">2003</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -273,13 +325,16 @@
                         <legend>Deixe uma mensagem</legend>
                         <input type="text" placeholder="Nome" name="nome" class="grid-name">
                         <input type="email" placeholder="Email" name="email" class="grid-email">
-                        <textarea name="mensagem" id="msg"  class="grid-message" cols='10' placeholder="Escreva algo"></textarea>
+                        <textarea name="mensagem" id="msg" class="grid-message" cols='10'
+                            placeholder="Escreva algo"></textarea>
                     </fieldset>
                     <button type="submit">Enviar</button>
                 </form>
                 <nav>
                     <a href=""><i id="twitter" class="fab fa-twitter"></i></a>
-                    <a href=""><i id="youtube" class="fab fa-youtube"></i></a>
+                    <a id="tribute-link" target="_blank"
+                        href="https://www.youtube.com/channel/UCj6D7TD56CKHr27lyVp9I-A"><i id="youtube"
+                            class="fab fa-youtube"></i></a>
                     <a href=""><i id="facebook" class="fab fa-facebook-f"></i></a>
                     <a href=""><i id="instagram" class="fab fa-instagram"></i></a>
                 </nav>
@@ -290,4 +345,5 @@
         </div>
     </footer>
 </body>
+
 </html>
